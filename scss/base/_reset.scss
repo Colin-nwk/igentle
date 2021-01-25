@@ -12,6 +12,13 @@ html {
   scroll-behavior: smooth;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  font-weight: var(--font-bold);
+  color: var(--black-2);
+}
 ul {
   list-style: none;
 }
@@ -22,4 +29,31 @@ a {
 
 img {
   max-width: 100%;
+  height: auto;
+}
+
+@include respond(tab-land) {
+  --h1: 5.6rem;
+  --h2: 4rem;
+  --h3: 3.4rem;
+
+  --font-small: 1.4rem;
+  --font-medium: 2rem;
+  --font-large: 3rem;
+}
+body {
+  margin: var(--header-height) 0 0 0;
+  font-family: var(--font-family);
+  font-size: var(--font-medium);
+  background-color: var(--white);
+  color: var(--black-3);
+  line-height: 1.6;
+}
+
+:root {
+  @include respond(phone) {
+    --h1: 3.5rem;
+    --h2: 2.5rem;
+    --h3: 2rem;
+  }
 }

@@ -2,12 +2,14 @@
 @import "base/mixins";
 @import "base/reset";
 @import "base/utility";
-@import "pages/layout";
-@import "pages/header";
+
 @import "pages/home";
-@import "pages/about";
-@import "pages/skills";
-@import "pages/portfolio";
-@import "pages/contact";
-@import "pages/footer";
+@import "layout/header";
+@import "layout/layout";
+@import "layout/banner";
+@import "layout/about";
+
+@import "component/buttons";
+@import "component/cards";
 @import "responsive/responsive";
+@import "base/theme";

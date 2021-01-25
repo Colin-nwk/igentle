@@ -1,0 +1,31 @@
+.l-main {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 110rem;
+  width: calc(100% - 4rem);
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  gap: 3rem;
+  align-items: center;
+}
+
+.section {
+  padding-top: calc(var(--header-height) + 2rem);
+  margin-top: 1rem;
+}
+.grid-set {
+  grid-template-columns: repeat(2, 1fr);
+  // align-items: center;
+}
+.grid-set-3 {
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 4rem;
+}
+.grid-set-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
