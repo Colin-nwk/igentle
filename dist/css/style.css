@@ -1,6 +1,7 @@
 :root {
-  --primary: #a174db;
-  --secondary: #49be55;
+  --primary: #18b2ee;
+  --secondary: #a5cc3b;
+  --secondary-dark: #94ae2f;
   --white: #fffdfd;
   --gray-1: #cccccc;
   --gray-2: #c2c2c2;
@@ -256,10 +257,28 @@ body {
   font-size: var(--h3);
 }
 
+.home {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.5))), url(/dist/assets/img/shop.jpeg);
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(/dist/assets/img/shop.jpeg);
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(/dist/assets/img/shop.jpeg);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(/dist/assets/img/shop.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  width: 100%;
+}
+
 .home__title {
   font-size: var(--h1);
+  color: var(--white);
   line-height: 1.4;
   margin: 0 0 2.5rem 0;
+  text-shadow: 0 20px 25px rgba(9, 113, 155, 0.5);
+}
+
+.home .text-medium {
+  color: var(--white);
 }
 
 .l-header {
@@ -349,7 +368,7 @@ body {
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  background-color: var(--secondary);
+  background-color: var(--primary);
 }
 
 .active::after {
@@ -381,14 +400,18 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 1rem;
-  background-color: rgba(161, 117, 219, 0.635);
-  border-radius: 0.4rem;
+  width: 5rem;
+  height: 5rem;
+  background-color: rgba(26, 97, 179, 0.635);
+  border-radius: var(--border-radius);
   color: var(--white);
   z-index: var(--z-fixed);
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   visibility: hidden;
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
 }
 
 .scrolltop:hover, .scrolltop:focus {
@@ -422,6 +445,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  justify-items: center;
 }
 
 .section {
@@ -443,10 +467,12 @@ body {
 .grid-set-4 {
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
 }
 
 .banner {
   background: var(--primary);
+  padding: 3rem 2rem;
 }
 
 .banner .card {

@@ -1,9 +1,21 @@
 .home {
   &__title {
     font-size: var(--h1);
+    color: var(--white);
     line-height: 1.4;
     margin: 0 0 2.5rem 0;
+    text-shadow: 0 20px 25px rgba(9, 113, 155, 0.5);
     // height: 60vh;
     // padding: 4rem;
   }
+  .text-medium {
+    color: var(--white);
+  }
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url(/dist/assets/img/shop.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  width: 100%;
 }
