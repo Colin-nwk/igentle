@@ -112,10 +112,10 @@
     box-shadow: var(--box-shadow-2);
   }
   &__icon {
-    font-size: var(--font-medium);
+    font-size: 3rem;
   }
 }
 .show-scroll {
   visibility: visible;
-  bottom: 4rem;
+  bottom: 8rem;
 }

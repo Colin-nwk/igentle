@@ -197,7 +197,7 @@ h2,
 h3,
 h4 {
   font-weight: var(--font-bold);
-  color: var(--black-2);
+  color: var(--black-3);
 }
 
 ul {
@@ -255,6 +255,17 @@ body {
 
 .sub-title {
   font-size: var(--h3);
+}
+
+.show-blue {
+  --clr-inner: #6dd5ed;
+  --clr-accent: #2f4858;
+}
+
+.show-red {
+  --clr-inner: #faa700;
+  --clr-outer: #e48d00;
+  --clr-accent: #a1173c;
 }
 
 .l-header {
@@ -396,12 +407,12 @@ body {
 }
 
 .scrolltop__icon {
-  font-size: var(--font-medium);
+  font-size: 3rem;
 }
 
 .show-scroll {
   visibility: visible;
-  bottom: 4rem;
+  bottom: 8rem;
 }
 
 .home {
@@ -419,10 +430,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(assets/img/shop.jpeg);
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(assets/img/shop.jpeg);
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(assets/img/shop.jpeg);
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(assets/img/shop.jpeg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../assets/img/shop.jpeg);
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/img/shop.jpeg);
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/img/shop.jpeg);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/img/shop.jpeg);
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -461,7 +472,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  justify-items: center;
 }
 
 .section {
@@ -479,12 +489,14 @@ body {
   margin: 2rem;
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
+  justify-items: center;
 }
 
 .grid-set {
   -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 2rem;
+  justify-items: center;
 }
 
 .flex {
@@ -499,6 +511,15 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.grid-footer {
+  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-gap: 3rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .gallery__grid {
@@ -549,6 +570,61 @@ body {
 
 .about-sub {
   margin-top: var(--header-height, 5rem);
+}
+
+.footer {
+  background: var(--primary);
+  padding-top: var(--header-height);
+}
+
+.footer__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer .rights {
+  text-align: center;
+  padding-top: 2rem;
+  font-weight: 700;
+}
+
+.footer h3 {
+  color: var(--black-3);
+}
+
+.footer a {
+  color: var(--black-3);
+  padding: 0.5rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.footer a i {
+  font-size: 2rem;
+}
+
+.footer a:hover, .footer a:focus {
+  color: var(--white);
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.services > p {
+  width: 40%;
 }
 
 .btn-primary, .btn-secondary, .btn-outline {
@@ -703,6 +779,39 @@ body {
   -webkit-transform: scale(1, 1);
       -ms-transform: scale(1, 1);
           transform: scale(1, 1);
+}
+
+.whatsapp-btn {
+  position: fixed;
+  z-index: var(--z-fixed, 100);
+  width: 5rem;
+  height: 5rem;
+  padding: 1rem;
+  bottom: 19rem;
+  right: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius, 1rem);
+  background-color: var(--secondary);
+}
+
+.whatsapp-btn i {
+  color: var(--white, whitesmoke);
+  font-size: 3rem;
 }
 
 .card {

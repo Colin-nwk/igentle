@@ -1,0 +1,37 @@
+.footer {
+  background: var(--primary);
+  //   background: #2f4858;
+  padding-top: var(--header-height);
+
+  &__flex {
+    // color: var(--black-3);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .rights {
+    text-align: center;
+    padding-top: 2rem;
+    font-weight: 700;
+  }
+  h3 {
+    color: var(--black-3);
+  }
+
+  a {
+    color: var(--black-3);
+    padding: 0.5rem;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    i {
+      font-size: 2rem;
+    }
+
+    &:hover,
+    &:focus {
+      color: var(--white);
+      transform: scale(1.05);
+    }
+  }
+}

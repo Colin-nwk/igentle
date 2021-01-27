@@ -82,5 +82,8 @@ function initMap() {
 }
 
 // const priceList = {
+//   cleaning[
+//   bedroom:[toilet: 1, price: 1000]
+//   ]
 
 // }

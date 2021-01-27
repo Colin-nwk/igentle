@@ -23,3 +23,13 @@
 .sub-title {
   font-size: var(--h3);
 }
+
+.show-blue {
+  --clr-inner: #6dd5ed;
+  --clr-accent: #2f4858;
+}
+.show-red {
+  --clr-inner: #faa700;
+  --clr-outer: #e48d00;
+  --clr-accent: #a1173c;
+}

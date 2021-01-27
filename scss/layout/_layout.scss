@@ -11,7 +11,6 @@
 .grid {
   display: grid;
   align-items: center;
-  justify-items: center;
 }
 
 .section {
@@ -24,10 +23,12 @@
   gap: 3rem;
   margin: 2rem;
   text-overflow: ellipsis;
+  justify-items: center;
 }
 .grid-set {
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 2rem;
+  justify-items: center;
 }
 
 .flex {
@@ -35,4 +36,9 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
+}
+.grid-footer {
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-gap: 3rem;
+  align-items: flex-start;
 }
