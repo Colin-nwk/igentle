@@ -11,19 +11,55 @@
   overflow: hidden;
   cursor: pointer;
   border-radius: var(--border-radius);
-  margin-right: 4rem;
   margin-top: 1rem;
+  box-shadow: var(--box-shadow);
+  transition: all 0.3s ease-in-out;
 }
 
 .btn-primary {
   @extend %btn;
   background: var(--primary);
   //   background-color: #7731d1;
-  color: var(--white);
-  border: none;
+  color: var(--black-3);
   &:hover,
   &:focus {
-    box-shadow: var(--box-shadow);
+    transform: scale(1.05);
+    opacity: 0.9;
+    box-shadow: var(--box-shadow-2);
+  }
+  &:after {
+    content: "";
+    background: rgba(255, 255, 255, 0.2);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(0.1, 0.1);
+    opacity: 0;
+    transition: all 0.8s;
+    overflow: hidden;
+  }
+  &:active:after {
+    transform: scale(1, 1);
+    opacity: 1;
+    transition: 0s;
+  }
+}
+.btn-secondary {
+  @extend %btn;
+  background: var(--secondary);
+  //   background-color: #7731d1;
+  color: var(--black-3);
+  border: none;
+  box-shadow: var(--box-shadow);
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+    opacity: 0.9;
+    box-shadow: var(--box-shadow-2);
+    
   }
   &:after {
     content: "";
@@ -48,7 +84,7 @@
 .btn-outline {
   @extend %btn;
   background: var(--white);
-  color: var(--primary);
+  color: var(--black-3);
   border: 1px solid var(--primary);
 
   &:hover,
