@@ -273,12 +273,12 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: var(--z-fixed, 100);
-  background-color: var(--white, whitesmoke);
+  z-index: var(--z-fixed);
+  background-color: var(--white);
 }
 
 .nav {
-  height: var(--header-height, 4rem);
+  height: var(--header-height);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -299,7 +299,7 @@ body {
     width: 90%;
     margin: 0 auto;
     padding: 3rem 0 0;
-    background-color: var(--white, whitesmoke);
+    background-color: var(--white);
     text-align: center;
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
@@ -317,7 +317,7 @@ body {
 .nav__link,
 .nav__logo,
 .nav__toggle {
-  color: var(--black-3, #111111);
+  color: var(--black-3);
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -329,7 +329,7 @@ body {
 }
 
 .nav__link:hover {
-  color: var(--primary, #006eff);
+  color: var(--primary);
 }
 
 .nav__toggle {
@@ -337,7 +337,7 @@ body {
 }
 
 .show-menu {
-  top: calc(var(--header-height, 5rem) + 1.6rem);
+  top: calc(var(--header-height) + 1.6rem);
 }
 
 .active-link {
@@ -355,7 +355,7 @@ body {
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  background-color: var(--primary, #006eff);
+  background-color: var(--primary);
 }
 
 .active::after {
@@ -365,7 +365,7 @@ body {
   height: 0.2rem;
   left: 0;
   top: 2.5rem;
-  background: var(--redish, #ee4141);
+  background: var(--redish);
 }
 
 .scroll-header {
@@ -390,9 +390,9 @@ body {
   width: 5rem;
   height: 5rem;
   background-color: var(--primary, blue);
-  border-radius: var(--border-radius, 1rem);
-  color: var(--white, whitesmoke);
-  z-index: var(--z-fixed, 100);
+  border-radius: var(--border-radius);
+  color: var(--white);
+  z-index: var(--z-fixed);
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -407,7 +407,7 @@ body {
 }
 
 .scrolltop__icon {
-  font-size: 3rem;
+  font-size: var(--font-medium);
 }
 
 .show-scroll {
@@ -859,10 +859,6 @@ body {
   }
   .nav__toggle {
     display: none;
-  }
-  .bd-container {
-    margin: 0 auto;
-    padding: 0 3rem;
   }
 }
 

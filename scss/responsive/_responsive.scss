@@ -13,10 +13,10 @@
   .nav__toggle {
     display: none;
   }
-  .bd-container {
-    margin: 0 auto;
-    padding: 0 3rem;
-  }
+  // .bd-container {
+  //   margin: 0 auto;
+  //   padding: 0 3rem;
+  // }
 }
 
 @include respond(phone) {
