@@ -16,18 +16,18 @@
     text-align: center;
     margin-bottom: 1rem;
   }
-  &__button-group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    max-width: 40rem;
-    padding: 1rem;
-    margin: 0 auto;
-  }
+  // &__button-group {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   justify-content: space-evenly;
+  //   align-items: center;
+  //   max-width: 40rem;
+  //   padding: 1rem;
+  //   margin: 0 auto;
+  // }
 
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(/dist/assets/img/shop.jpeg);
+    url(assets/img/shop.jpeg);
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
