@@ -197,7 +197,7 @@ h2,
 h3,
 h4 {
   font-weight: var(--font-bold);
-  color: var(--black-3);
+  color: #0b6e95;
 }
 
 ul {
@@ -475,8 +475,8 @@ body {
 }
 
 .section {
-  padding-top: calc(var(--header-height) + 2rem);
-  margin-top: 1rem;
+  padding-top: calc(var(--header-height) + 2.5rem);
+  margin-bottom: 2rem;
 }
 
 .grid-set-2 {
@@ -525,7 +525,7 @@ body {
 .gallery__grid {
   display: -ms-grid;
   display: grid;
-  grid-gap: 0.5rem;
+  grid-gap: 2rem;
   -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   grid-auto-flow: dense;
@@ -544,6 +544,16 @@ body {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  -webkit-transition: -webkit-box-shadow 0.4s ease-in-out;
+  transition: -webkit-box-shadow 0.4s ease-in-out;
+  -o-transition: box-shadow 0.4s ease-in-out;
+  transition: box-shadow 0.4s ease-in-out;
+  transition: box-shadow 0.4s ease-in-out, -webkit-box-shadow 0.4s ease-in-out;
+}
+
+.gallery__img:hover {
+  -webkit-box-shadow: var(--box-shadow-2);
+          box-shadow: var(--box-shadow-2);
 }
 
 .gallery img {
@@ -566,6 +576,7 @@ body {
 #map {
   height: 50rem;
   width: 50rem;
+  border-radius: var(--border-radius);
 }
 
 .about-sub {
@@ -573,8 +584,10 @@ body {
 }
 
 .footer {
-  background: var(--primary);
+  background: #074b66;
   padding-top: var(--header-height);
+  color: var(--white);
+  margin-top: 2rem;
 }
 
 .footer__flex {
@@ -600,11 +613,11 @@ body {
 }
 
 .footer h3 {
-  color: var(--black-3);
+  color: var(--white);
 }
 
 .footer a {
-  color: var(--black-3);
+  color: var(--white);
   padding: 0.5rem;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -617,10 +630,10 @@ body {
 }
 
 .footer a:hover, .footer a:focus {
-  color: var(--white);
-  -webkit-transform: scale(1.05);
-      -ms-transform: scale(1.05);
-          transform: scale(1.05);
+  font-weight: bold;
+  -webkit-transform: scale(1.09);
+      -ms-transform: scale(1.09);
+          transform: scale(1.09);
 }
 
 .services > p {
@@ -806,7 +819,7 @@ body {
   -webkit-box-shadow: var(--box-shadow);
           box-shadow: var(--box-shadow);
   border-radius: var(--border-radius, 1rem);
-  background-color: var(--secondary);
+  background-color: var(--secondary-dark);
 }
 
 .whatsapp-btn i {

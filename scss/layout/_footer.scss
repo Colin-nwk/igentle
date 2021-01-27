@@ -1,7 +1,9 @@
 .footer {
-  background: var(--primary);
+  background: darken(#18b2ee, 30%);
   //   background: #2f4858;
   padding-top: var(--header-height);
+  color: var(--white);
+  margin-top: 2rem;
 
   &__flex {
     // color: var(--black-3);
@@ -16,11 +18,11 @@
     font-weight: 700;
   }
   h3 {
-    color: var(--black-3);
+    color: var(--white);
   }
 
   a {
-    color: var(--black-3);
+    color: var(--white);
     padding: 0.5rem;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
@@ -30,8 +32,8 @@
 
     &:hover,
     &:focus {
-      color: var(--white);
-      transform: scale(1.05);
+      font-weight: bold;
+      transform: scale(1.09);
     }
   }
 }
