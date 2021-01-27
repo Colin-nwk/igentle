@@ -38,11 +38,12 @@
             <li class="nav__item">
               <a href="#about" class="nav__link">About</a>
             </li>
-            <li class="nav__item">
-              <a href="#gallery" class="nav__link">Gallery</a>
-            </li>
+
             <li class="nav__item">
               <a href="#services" class="nav__link">Services</a>
+            </li>
+            <li class="nav__item">
+              <a href="#gallery" class="nav__link">Gallery</a>
             </li>
             <li class="nav__item">
               <a href="#contact" class="nav__link">Contact</a>
@@ -58,30 +59,24 @@
     <main class="l-main">
       <!-- ======= HOME ======= -->
       <section class="section home mt-1" id="home">
-        <div class="container grid grid-set">
+        <div class="container">
           <div class="home-data">
             <h1 class="home__title">Treat yourself to a clean healthy home.</h1>
             <p class="text-medium">
               We provide the best <br />
               <span> Clean Home. Professional Service. Fair Price. </span>
             </p>
-            <div class="home__button-group mt-5">
-              <a href="#contact" class="btn-primary btn" id="cta">Contact Us</a>
-              <a href="#projects" class="btn-outline btn" id="cta">Our Works</a>
-            </div>
+            <!-- <div class="home__button-group"> -->
+            <a href="#contact" class="btn-primary btn">Contact Us</a>
+            <!-- <a href="#projects" class="btn-outline btn">Our Works</a> -->
           </div>
-          <img
-            src="assets/img/shop.jpeg"
-            alt="home page image"
-            class="home__img"
-          />
+          <!-- </div> -->
         </div>
       </section>
-      <!-- ======= ABOUT ======= -->
       <section class="section about" id="about">
         <div class="banner">
-          <div class="container grid grid-set-3 bg-white">
-            <div class="card">
+          <div class="container flex">
+            <div class="card flex-card">
               <i class="far fa-thumbs-up"></i>
               <h3 class="subtitle">Lorem, ipsum dolor.</h3>
               <p class="text-small">
@@ -89,7 +84,7 @@
                 tenetur cupiditate ut adipisci deleniti.
               </p>
             </div>
-            <div class="card">
+            <div class="card flex-card">
               <i class="far fa-thumbs-up"></i>
               <h3 class="subtitle">Lorem, ipsum dolor.</h3>
               <p class="text-small">
@@ -97,7 +92,7 @@
                 tenetur cupiditate ut adipisci deleniti.
               </p>
             </div>
-            <div class="card">
+            <div class="card flex-card">
               <i class="far fa-thumbs-up"></i>
               <h3 class="subtitle">Lorem, ipsum dolor.</h3>
               <p class="text-small">
@@ -107,40 +102,45 @@
             </div>
           </div>
         </div>
-        <div class="container grid grid-set about-sub">
-          <div class="about__img">
-            <img
-              src="assets/svg/undraw_sculpting_1c9p.svg"
-              alt="picture of staff cleaning"
-            />
-          </div>
-          <div class="about__data">
-            <h2 class="title">We are here to always help you</h2>
-            <p class="text-medium">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Perferendis, corporis. Facere consectetur doloribus recusandae
-              minima autem mollitia. Consectetur rem eligendi, corrupti numquam
-              consequatur nostrum dicta iusto perspiciatis placeat nemo
-              obcaecati.
-            </p>
-            <a href="#contact" class="btn-primary btn" id="cta">Know More</a>
-          </div>
+        <!-- ======= ABOUT ======= -->
 
-          <div class="about__data">
-            <h2 class="title">About US</h2>
-            <p class="text-medium">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Perferendis, corporis. Facere consectetur doloribus recusandae
-              minima autem mollitia. Consectetur rem eligendi, corrupti numquam
-              consequatur nostrum dicta iusto perspiciatis placeat nemo
-              obcaecati.
-            </p>
+        <div class="container about-sub">
+          <div class="grid grid-set-2">
+            <div class="about__img">
+              <img
+                src="assets/svg/undraw_sculpting_1c9p.svg"
+                alt="picture of staff cleaning"
+              />
+            </div>
+            <div class="about__data">
+              <h2 class="title">We are here to always help you</h2>
+              <p class="text-medium">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis, corporis. Facere consectetur doloribus recusandae
+                minima autem mollitia. Consectetur rem eligendi, corrupti
+                numquam consequatur nostrum dicta iusto perspiciatis placeat
+                nemo obcaecati.
+              </p>
+              <a href="#contact" class="btn-primary btn" id="cta">Know More</a>
+            </div>
           </div>
-          <div class="about__img">
-            <img
-              src="assets/svg/undraw_sculpting_1c9p.svg"
-              alt="picture of staff cleaning"
-            />
+          <div class="grid grid-set-2">
+            <div class="about__data">
+              <h2 class="title">About US</h2>
+              <p class="text-medium">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis, corporis. Facere consectetur doloribus recusandae
+                minima autem mollitia. Consectetur rem eligendi, corrupti
+                numquam consequatur nostrum dicta iusto perspiciatis placeat
+                nemo obcaecati.
+              </p>
+            </div>
+            <div class="about__img">
+              <img
+                src="assets/svg/undraw_sculpting_1c9p.svg"
+                alt="picture of staff cleaning"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -153,69 +153,154 @@
             tempore pariatur cupiditate? Voluptas nisi totam qui ipsa nesciunt
             ullam ipsum?
           </p>
-          <div class="grid">
-            <div class="grid grid-set-4">
-              <div class="card">
-                <div class="text-center">
-                  <i class="far fa-chart-bar"></i>
-                  <span>Cleaning 1</span>
-                </div>
-                <p class="text-medium">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum.
-                </p>
-                <a href="#" class="read__link">read more</a>
+          <div class="grid grid-set">
+            <div class="card">
+              <div class="text-center">
+                <i class="far fa-chart-bar"></i>
+                <span>Cleaning 1</span>
               </div>
-              <div class="card">
-                <div>
-                  <i class="far fa-chart-bar"></i>
-                  <span>Cleaning 2</span>
-                </div>
-                <p class="text-medium">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum.
-                </p>
-                <a href="#" class="read__link">read more</a>
+              <p class="text-medium">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum.
+              </p>
+              <a href="#" class="read__link">read more</a>
+            </div>
+            <div class="card">
+              <div>
+                <i class="far fa-chart-bar"></i>
+                <span>Cleaning 2</span>
               </div>
-              <div class="card">
-                <div>
-                  <i class="far fa-chart-bar"></i>
-                  <span>Cleaning 3</span>
-                </div>
-                <p class="text-medium">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum.
-                </p>
-                <a href="#" class="read__link">read more</a>
+              <p class="text-medium">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum.
+              </p>
+              <a href="#" class="read__link">read more</a>
+            </div>
+            <div class="card">
+              <div>
+                <i class="far fa-chart-bar"></i>
+                <span>Cleaning 3</span>
               </div>
-              <div class="card">
-                <div>
-                  <i class="far fa-chart-bar"></i>
-                  <span>Cleaning 4</span>
-                </div>
-                <p class="text-medium">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum.
-                </p>
-                <a href="#" class="read__link">read more</a>
+              <p class="text-medium">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum.
+              </p>
+              <a href="#" class="read__link">read more</a>
+            </div>
+            <div class="card">
+              <div>
+                <i class="far fa-chart-bar"></i>
+                <span>Cleaning 4</span>
               </div>
-              <div class="card">
-                <div>
-                  <i class="far fa-chart-bar"></i>
-                  <span>Cleaning 5</span>
-                </div>
-                <p class="text-medium">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum.
-                </p>
-                <a href="#" class="read__link">read more</a>
+              <p class="text-medium">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum.
+              </p>
+              <a href="#" class="read__link">read more</a>
+            </div>
+            <div class="card">
+              <div>
+                <i class="far fa-chart-bar"></i>
+                <span>Cleaning 5</span>
               </div>
+              <p class="text-medium">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum.
+              </p>
+              <a href="#" class="read__link">read more</a>
             </div>
           </div>
         </div>
       </section>
       <!-- ======= GALLERY ======= -->
       <section class="section gallery" id="gallery">
-        <div class="container"></div>
+        <div class="container">
+          <h2 class="title">Sample of our work</h2>
+          <p class="text-medium">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis
+          </p>
+
+          <div class="grid gallery__grid">
+            <div class="gallery__img high">
+              <img src="assets/img/shop.jpeg" alt="" />
+            </div>
+            <div class="gallery__img">
+              <img src="assets/img/staff.jpeg" alt="" />
+            </div>
+            <div class="gallery__img wide">
+              <img src="assets/img/stairs.jpeg" alt="" />
+            </div>
+            <div class="gallery__img">
+              <img src="assets/img/shop.jpeg" alt="" />
+            </div>
+            <div class="gallery__img">
+              <img src="assets/img/shop.jpeg" alt="" />
+            </div>
+            <div class="gallery__img high wide">
+              <img src="assets/img/staff.jpeg" alt="" />
+            </div>
+            <div class="gallery__img">
+              <img src="assets/img/stairs.jpeg" alt="" />
+            </div>
+            <div class="gallery__img">
+              <img src="assets/img/stairs.jpeg" alt="" />
+            </div>
+            <div class="gallery__img wide">
+              <img src="assets/img/stairs.jpeg" alt="" />
+            </div>
+            <div class="gallery__img">
+              <img src="assets/img/staff.jpeg" alt="" />
+            </div>
+            <div class="gallery__img">
+              <img src="assets/img/staff.jpeg" alt="" />
+            </div>
+            <div class="gallery__img">
+              <img src="assets/img/staff.jpeg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ======= PRICING ======= -->
+      <!-- <section class="section pricing" id="pricing">
+        <div class="container">
+          <div class="pricing__content">
+            <form action="#" class="pricing__form">
+              <div class="form__input"></div>
+            </form>
+          </div>
+        </div>
+      </section> -->
+      <!-- ======= CONTACT ======= -->
+      <section class="section contact" id="contact">
+        <div class="container">
+          <h2 class="title">Get in Touch</h2>
+          <p class="text-medium">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+            doloribus, odio vitae molestias maxime magni.
+          </p>
+          <div class="grid grid-set">
+            <div class="contact__map">
+              <div class="map" id="map"></div>
+            </div>
+            <div class="contact__address">
+              <p>address</p>
+              <p>address</p>
+              <p>address</p>
+              <p>address</p>
+              <p>address</p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="container"></div>
+    </footer>
     <!--===== REVEAL SCROLL JS =====-->
     <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== GOOGLE MAP =====-->
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqyjq5nYme4bXHGSIZPRPIaiaE9d_3qBc&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
     <script src="js/app.js"></script>
   </body>
 </html>

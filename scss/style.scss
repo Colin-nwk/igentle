@@ -3,11 +3,13 @@
 @import "base/reset";
 @import "base/utility";
 
-@import "pages/home";
 @import "layout/header";
-@import "layout/layout";
+@import "pages/home";
 @import "layout/banner";
+@import "layout/layout";
+@import "layout/gallery";
 @import "layout/about";
+@import "layout/footer";
 
 @import "component/buttons";
 @import "component/cards";

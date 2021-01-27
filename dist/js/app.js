@@ -26,21 +26,24 @@ window.addEventListener("scroll", scrollActive);
 
 function scrollActive() {
   const scrollY = window.pageYOffset;
-
-  sections.forEach((current) => {
-    const sectionHeight = current.offsetHeight;
-    const sectionTop = current.offsetTop - 50;
-    sectionId = current.getAttribute("id");
-    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-      document
-        .querySelector(".nav__menu a[href*=" + sectionId + "]")
-        .classList.add("active-link");
-    } else {
-      document
-        .querySelector(".nav__menu a[href*=" + sectionId + "]")
-        .classList.remove("active-link");
-    }
-  });
+  try {
+    sections.forEach((current) => {
+      const sectionHeight = current.offsetHeight;
+      const sectionTop = current.offsetTop - 50;
+      sectionId = current.getAttribute("id");
+      if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+        document
+          .querySelector(".nav__menu a[href*=" + sectionId + "]")
+          .classList.add("active-link");
+      } else {
+        document
+          .querySelector(".nav__menu a[href*=" + sectionId + "]")
+          .classList.remove("active-link");
+      }
+    });
+  } catch (e) {
+    // console.log(e);
+  }
 }
 
 /*===== CHANGE HEADER BACKGROUND =====*/
@@ -60,3 +63,24 @@ function scrollTop() {
   else nav.classList.remove("show-scroll");
 }
 window.addEventListener("scroll", scrollTop);
+
+/*===== GOOGLE MAP API =====*/
+//Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  const uluru = { lat: -25.344, lng: 131.036 };
+  // The map, centered at Uluru
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 13,
+    center: uluru,
+  });
+  // The marker, positioned at Uluru
+  const marker = new google.maps.Marker({
+    position: uluru,
+    map: map,
+  });
+}
+
+// const priceList = {
+
+// }
