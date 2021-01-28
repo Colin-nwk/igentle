@@ -136,4 +136,11 @@
     color: var(--white, whitesmoke);
     font-size: 3rem;
   }
+  &:focus,
+  &:hover {
+    box-shadow: var(--box-shadow-2);
+  }
+}
+.icon {
+  color: darken(#18b2ee, 30%);
 }

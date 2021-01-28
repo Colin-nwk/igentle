@@ -1,0 +1,23 @@
+.contact {
+  .grid {
+    margin: 2rem 0;
+  }
+  &__group {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    margin: 0.5rem;
+
+    i {
+      font-size: 2rem;
+      color: darken(#18b2ee, 30%);
+      padding-top: 1.5rem;
+    }
+    div {
+      padding: 0.5rem;
+      line-height: 1;
+    }
+  }
+}
+

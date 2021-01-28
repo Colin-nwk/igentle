@@ -583,6 +583,14 @@ body {
   margin-top: var(--header-height, 5rem);
 }
 
+.about .icon {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
 .footer {
   background: #074b66;
   padding-top: var(--header-height);
@@ -638,6 +646,35 @@ body {
 
 .services > p {
   width: 40%;
+}
+
+.contact .grid {
+  margin: 2rem 0;
+}
+
+.contact__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 1rem;
+  margin: 0.5rem;
+}
+
+.contact__group i {
+  font-size: 2rem;
+  color: #074b66;
+  padding-top: 1.5rem;
+}
+
+.contact__group div {
+  padding: 0.5rem;
+  line-height: 1;
 }
 
 .btn-primary, .btn-secondary, .btn-outline {
@@ -827,6 +864,15 @@ body {
   font-size: 3rem;
 }
 
+.whatsapp-btn:focus, .whatsapp-btn:hover {
+  -webkit-box-shadow: var(--box-shadow-2);
+          box-shadow: var(--box-shadow-2);
+}
+
+.icon {
+  color: #074b66;
+}
+
 .card {
   background-color: var(--white);
   -webkit-box-shadow: var(--box-shadow);
@@ -848,10 +894,22 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 2rem;
   margin: 1rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.flex-card:hover, .flex-card:focus {
+  -webkit-transform: scale(1.01);
+      -ms-transform: scale(1.01);
+          transform: scale(1.01);
+  -webkit-box-shadow: var(--box-shadow-2);
+          box-shadow: var(--box-shadow-2);
 }
 
 @media only screen and (min-width: 56.26em) {
