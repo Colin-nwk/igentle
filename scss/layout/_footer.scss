@@ -1,9 +1,12 @@
 .footer {
   background: darken(#18b2ee, 30%);
   //   background: #2f4858;
-  padding-top: var(--header-height);
+  padding-top: calc(var(--header-height) + 2rem);
   color: var(--white);
-  margin-top: 2rem;
+
+  // .container {
+  //   margin-top: 2rem;
+  // }
 
   &__flex {
     // color: var(--black-3);

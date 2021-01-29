@@ -1,11 +1,12 @@
 .card {
   background-color: var(--white);
-  box-shadow: var(--box-shadow);
+  // box-shadow: var(--box-shadow);
   border-radius: var(--border-radius);
   padding: 2rem;
 }
 
 .flex-card {
+  box-shadow: var(--box-shadow);
   width: 28rem;
   height: 28rem;
   display: flex;

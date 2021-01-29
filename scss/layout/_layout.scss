@@ -15,19 +15,23 @@
 
 .section {
   padding-top: calc(var(--header-height) + 2.5rem);
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 .grid-set-2 {
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  // align-items: center;
   gap: 3rem;
   margin: 2rem;
   text-overflow: ellipsis;
-  justify-items: center;
+  // justify-items: center;
 }
 .grid-set {
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  grid-gap: 3rem;
   justify-items: center;
 }
 

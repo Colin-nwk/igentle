@@ -16,6 +16,10 @@
   line-height: 2;
 }
 
+.text-small {
+  font-size: var(--font-small);
+}
+
 .title {
   font-size: var(--h2);
   margin-bottom: 1.5rem;
@@ -32,4 +36,10 @@
   --clr-inner: #faa700;
   --clr-outer: #e48d00;
   --clr-accent: #a1173c;
+}
+
+#map {
+  height: 50rem;
+  width: 50rem;
+  border-radius: var(--border-radius);
 }
