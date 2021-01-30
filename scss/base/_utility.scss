@@ -39,7 +39,7 @@
 }
 
 #map {
-  height: 50rem;
-  width: 50rem;
+  min-height: 28rem;
+  min-width: 28rem;
   border-radius: var(--border-radius);
 }

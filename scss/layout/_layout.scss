@@ -14,8 +14,8 @@
 }
 
 .section {
-  padding-top: calc(var(--header-height) + 2.5rem);
-  margin-bottom: 3rem;
+  padding: calc(var(--header-height) + 2.5rem) 0;
+  // margin-bottom: 3rem;
 
   &:last-child {
     margin-bottom: 0;
@@ -30,7 +30,7 @@
   // justify-items: center;
 }
 .grid-set {
-  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 3rem;
   justify-items: center;
 }

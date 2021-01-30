@@ -134,3 +134,38 @@ function progress() {
     currentMainPost.classList.remove("main-post--not-active");
   }
 }
+
+/*===== SCROLL REVEAL JS =====*/
+const scrollRe = ScrollReveal({
+  origin: "top",
+  distance: "80px",
+  duration: 3000,
+  reset: true,
+});
+
+//Home
+scrollRe.reveal(".home__title", {});
+scrollRe.reveal(".home__text", {});
+//About
+scrollRe.reveal(".flex-card", { delay: 500, interval: 300 });
+// scrollRe.reveal(".about__title", { delay: 300 });
+scrollRe.reveal(".about__img", { delay: 400 });
+scrollRe.reveal("about__data", { delay: 300 });
+
+//General
+scrollRe.reveal(".title", { delay: 300 });
+// scrollRe.reveal(".subtitle", { delay: 250 });
+// scrollRe.reveal(".text-medium", { delay: 200 });
+
+//Services
+// scrollRe.reveal(".flex-card", { delay: 500, interval: 300 });
+// scrollRe.reveal(".about__title", { delay: 300 });
+scrollRe.reveal(".card", { delay: 200 });
+
+//gallery
+scrollRe.reveal(".carousel", { delay: 400 });
+scrollRe.reveal(".gallery__img", { delay: 400, interval: 200 });
+
+//contact
+scrollRe.reveal(".contact__map", { delay: 500 });
+scrollRe.reveal(".contact__group", { delay: 400, interval: 300 });
