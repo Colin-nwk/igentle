@@ -1,3 +1,8 @@
+/*===== DATE =====*/
+const year = document.querySelector(".year"),
+  getCurrentYear = new Date();
+year.innerHTML = getCurrentYear.getFullYear();
+
 /* === Menu show=== */
 const showMenu = (toggleId, navId) => {
   const toggle = document.getElementById(toggleId),
@@ -81,13 +86,6 @@ function initMap() {
   });
 }
 
-// const priceList = {
-//   cleaning[
-//   bedroom:[toilet: 1, price: 1000]
-//   ]
-
-// }
-
 /*===== CAROUSEL CONTROL =====*/
 
 let mainPosts = document.querySelectorAll(".main-post");
@@ -154,12 +152,9 @@ scrollRe.reveal("about__data", { delay: 300 });
 
 //General
 scrollRe.reveal(".title", { delay: 300 });
-// scrollRe.reveal(".subtitle", { delay: 250 });
-// scrollRe.reveal(".text-medium", { delay: 200 });
 
 //Services
-// scrollRe.reveal(".flex-card", { delay: 500, interval: 300 });
-// scrollRe.reveal(".about__title", { delay: 300 });
+
 scrollRe.reveal(".card", { delay: 200 });
 
 //gallery
